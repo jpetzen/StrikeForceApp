@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--Light-->
+    <color name="light_grenish">#AED9E0</color>
+    <color name="light_pink">#F7CED7</color>
+
+    <!--Dark-->
+    <color name="temna_main">#222831</color>
+    <color name="temna_sub">#393E46</color>
+    <color name="temna_modra">#00ADB5</color>
+</resources>

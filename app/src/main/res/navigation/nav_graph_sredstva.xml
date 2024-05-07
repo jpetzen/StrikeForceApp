@@ -1,0 +1,26 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_sred"
+    app:startDestination="@id/fragment_sredstva_show">
+
+    <fragment
+        android:id="@+id/fragment_sredstva_show"
+        android:name="com.example.forceapp.SredstvaFragmentShow"
+        android:label="fragment_sredstva_show"
+        tools:layout="@layout/fragment_sredstva_show" >
+        <action
+            android:id="@+id/action_to_sredstvaFragmentAdd"
+            app:destination="@id/fragment_sredstva_add" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_sredstva_add"
+        android:name="com.example.forceapp.SredstvaFragmentAdd"
+        android:label="fragment_sredstva_add"
+        tools:layout="@layout/fragment_sredstva_add" >
+        <action
+            android:id="@+id/action_fragment_sredstva_add_to_fragment_sredstva_show"
+            app:destination="@id/fragment_sredstva_show" />
+    </fragment>
+</navigation>

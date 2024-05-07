@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <PreferenceCategory app:title="General">
+        <SwitchPreferenceCompat
+            app:key="night"
+            app:title="@string/settings_dark_mode"
+            app:icon="@drawable/icon_dark_mode"
+            >
+        </SwitchPreferenceCompat>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/settings_logout">
+        <Preference
+            android:key="logout_preference"
+            android:title="Logout"
+            android:icon="@drawable/icon_logout"
+            />
+    </PreferenceCategory>
+
+</PreferenceScreen>

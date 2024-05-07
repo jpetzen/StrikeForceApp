@@ -1,0 +1,25 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/fragment_opravila_show"
+        android:name="com.example.forceapp.OpravilaFragmentShow"
+        android:label="fragment_opravila_show"
+        tools:layout="@layout/fragment_opravila_show" >
+        <action
+            android:id="@+id/action_to_opravilaFragmentAdd"
+            app:destination="@id/fragment_opravila_add" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_opravila_add"
+        android:name="com.example.forceapp.OpravilaFragmentAdd"
+        android:label="fragment_opravila_add"
+        tools:layout="@layout/fragment_opravila_add" >
+        <action
+            android:id="@+id/action_fragment_opravila_add_to_fragment_opravila_show"
+            app:destination="@id/fragment_opravila_show" />
+    </fragment>
+</navigation>
