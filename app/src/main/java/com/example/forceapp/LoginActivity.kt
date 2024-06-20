@@ -22,9 +22,7 @@ import java.net.URL
 class SharedPrefManager(context: Context) {
     private val sharedPreferences: SharedPreferences = context.getSharedPreferences("MySharedPref", Context.MODE_PRIVATE)
     val editor: SharedPreferences.Editor = sharedPreferences.edit()
-    companion object {
-        const val backendURL = "http://192.168.240.231:8000"
-    }
+    val backendURL = ApiService.Constants.backendURL
 
     // Function to check if the user is logged in
     fun isUserLogged(): Boolean {
