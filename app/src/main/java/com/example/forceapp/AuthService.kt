@@ -21,7 +21,7 @@ import java.security.MessageDigest
 
 
 class AuthService(private val context: Context) {
-    private val backendURL = "http://192.168.240.231:8000"
+    val backendURL = ApiService.Constants.backendURL
     private val client = OkHttpClient()
 
     fun register(username: String, email: String, password: String, callback: LoginCallback) {
