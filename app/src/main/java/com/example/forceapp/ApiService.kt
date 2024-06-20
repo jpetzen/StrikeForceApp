@@ -24,8 +24,8 @@ class ApiService(context: Context) {
     private val authService: AuthService = AuthService(context)
     private val sharedPreferences: SharedPreferences
     private val gson = Gson()
-    companion object {
-        const val backendURL = "http://192.168.240.231:8000"
+    object Constants{
+        const val backendURL = "http://192.168.35.231:8000"
     }
 
     init {
